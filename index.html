@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento com Google Pay</title>
+  <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script>
+    const allowedCardNetworks = ["VISA", "MASTERCARD"];
+    const allowedCardAuthMethods = ["PAN_ONLY", "CRYPTOGRAM_3DS"];
+
+    // Configure os parâmetros do Google Pay
+    const paymentsClient = new google.payments.api.PaymentsClient({environment: 'TEST'});
+    const paymentDataRequest = {
+      apiVersion: 2,
+      apiVersionMinor: 0,
+      allowedPaymentMethods: [{
+        type: 'CARD',
+        parameters: {
+          allowedAuthMethods: allowedCardAuthMethods,
+          allowedCardNetworks: allowedCardNetworks
+        },
+        tokenizationSpecification: {
+          type: 'PAYMENT_GATEWAY',
+          parameters: {
+            'gateway': 'stripe',  // Exemplo: substitua conforme seu provedor de pagamentos
+            'stripe:version': '2022-08-01',
+            'stripe:publishableKey': 'SUA_CHAVE_PUBLICA_STRIPE'
+          }
+        }
+      }],
+      merchantInfo: {
+        merchantId: 'SUA_MERCHANT_ID',  // Substitua pelo seu merchantId do Google Pay
+        merchantName: 'Seu Nome de Loja'
+      },
+      transactionInfo: {
+        totalPriceStatus: 'FINAL',
+        totalPrice: '10.00',  // valor total em formato de string
+        currencyCode: 'USD',   // moeda (ex: USD, EUR, MZN)
+        countryCode: 'US'      // código do país (ex: US, MZ)
+      }
+    };
+
+    function onGooglePayLoaded() {
+      const button = paymentsClient.createButton({onClick: onGooglePayButtonClicked});
+      document.getElementById('container').appendChild(button);
+    }
+
+    async function onGooglePayButtonClicked() {
+      try {
+        const paymentData = await paymentsClient.loadPaymentData(paymentDataRequest);
+        processPayment(paymentData);
+      } catch (err) {
+        console.error('Erro ao carregar dados de pagamento:', err);
+      }
+    }
+
+    function processPayment(paymentData) {
+      // Aqui, você processaria o pagamento enviando `paymentData` ao backend
+      console.log("Pagamento realizado com sucesso!", paymentData);
+      alert("Pagamento concluído com sucesso!");
+    }
+
+    // Inicializa o Google Pay quando a página é carregada
+    window.onload = onGooglePayLoaded;
+  </script>
+</body>
+</html>

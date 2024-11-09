@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Premium - Meu Aplicativo</title>
+  <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .subscription-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2D97D1;
+      margin: 20px 0;
+    }
+    #google-pay-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="subscription-container">
+    <h2>Assinatura Premium</h2>
+    <p>Desfrute de todos os recursos do nosso aplicativo com o plano Premium.</p>
+    <div class="price">180 MT / mês</div>
+    <div id="google-pay-button"></div>
+  </div>
+
+  <script>
+    const paymentsClient = new google.payments.api.PaymentsClient({environment: 'TEST'});
+
+    const paymentDataRequest = {
+      apiVersion: 2,
+      apiVersionMinor: 0,
+      allowedPaymentMethods: [{
+        type: 'CARD',
+        parameters: {
+          allowedAuthMethods: ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+          allowedCardNetworks: ["VISA", "MASTERCARD"]
+        },
+        tokenizationSpecification: {
+          type: 'PAYMENT_GATEWAY',
+          parameters: {
+            'gateway': 'stripe',  // Substitua pelo seu gateway (ex.: 'vodacom')
+            'stripe:version': '2022-08-01',
+            'stripe:publishableKey': 'SUA_CHAVE_PUBLICA_STRIPE'
+          }
+        }
+      }],
+      merchantInfo: {
+        merchantId: 'BCR2DN4TUOE6ZV27',  //codigo
+        merchantName: 'Aliyah'
+      },
+      transactionInfo: {
+        totalPriceStatus: 'FINAL',
+        totalPrice: '180',  // Preço da assinatura
+        currencyCode: 'MZN',  
+        countryCode: 'MZ'     // Código do país
+      }
+    };
+
+    function onGooglePayLoaded() {
+      const googlePayButton = paymentsClient.createButton({
+        onClick: onGooglePayButtonClicked
+      });
+      document.getElementById('google-pay-button').appendChild(googlePayButton);
+    }
+
+    async function onGooglePayButtonClicked() {
+      try {
+        const paymentData = await paymentsClient.loadPaymentData(paymentDataRequest);
+        processPayment(paymentData);
+      } catch (err) {
+        console.error('Erro ao carregar dados de pagamento:', err);
+        alert("Erro ao processar pagamento. Tente novamente.");
+      }
+    }
+
+    function processPayment(paymentData) {
+      console.log("Dados do pagamento recebidos:", paymentData);
+      alert("Pagamento bem-sucedido! Bem-vindo ao Premium!");
+     
+    }
+
+    window.onload = onGooglePayLoaded;
+  </script>
+
+</body>
+</html>
