@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aliyah</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white">Aliyah<span class="text-dark"></span></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="../index.html" class="nav-item nav-link active">Home</a>
+                        <a href="../contacto.html" class="nav-item nav-link">Contact</a>
+                        <a href="team.html" class="nav-item nav-link">Our Team</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Aliyah Project</div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Make your daily life more productive</h1>
+                    <p class="text-white mb-4 animated slideInRight">Aliyah helps you automate tasks, optimize your time, and boost productivity, making technology truly work for you.</p>
+                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Log in</a>
+                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact us</a>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/Bioguradian-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: #156dfc;">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/aliyahmockup-3.png">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
+                    <h1 class="mb-4 text-primary">Make your daily life more productive with AI</h1>
+                    <p class="mb-4">Aliyah is an all-in-one artificial intelligence assistant designed to simplify everyday tasks and boost productivity.</p>
+                    <p class="mb-4">Whether you want to chat, scan images, generate content, manage tasks, or send personalized emails, Aliyah adapts to your needs.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3 text-primary"><i class="fa fa-check text-primary me-2"></i>Smart Chat</h6>
+                            <h6 class="mb-0 text-primary"><i class="fa fa-check text-primary me-2"></i>Image Scan</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3 text-primary"><i class="fa fa-check text-primary me-2"></i>Speak</h6>
+                            <h6 class="mb-0 text-primary"><i class="fa fa-check text-primary me-2"></i>Personalized Emails</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="./contacto.html">Learn more</a>
+
+                        <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/profile.php?id=61559633678602">
+                            <small class="fab fa-facebook-f text-primary"></small>
+                        </a>
+                        <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://x.com/unitechmz">
+                            <small class="fab fa-twitter text-primary"></small>
+                        </a>
+                        <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.linkedin.com/company/unitechsolution-co/">
+                            <small class="fab fa-linkedin-in text-primary"></small>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">dlklekl</div>
+                    <h1 class="mb-4 text-primary">Nossas excelentes soluções de IA para o seu negócio</h1>
+                    <p class="mb-4 ">Estamos comprometidos com a ética e a transparência em todas as nossas iniciativas de IA. Priorizamos a privacidade e a segurança dos dados, garantindo que nossas soluções não só sejam eficazes, mas também confiáveis e seguras.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="../contacto.html">Saber mais</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-robot fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Automação Robótica</h5>
+                                        <p>aumentando a eficiência e reduzindo custos operacionais.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="../contacto.html">Saber mais</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-power-off fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Aprendizado de máquina</h5>
+                                        <p>Utilizamos IA para processar e interpretar grandes volumes de dados, </p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="../contacto.html">Saber mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-graduation-cap fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Educação e Ciência</h5>
+                                        <p>aplicáveis em diversas indústrias como segurança, saúde e varejo.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="../contacto.html">Saber mais</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-brain fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Análise Preditiva</h5>
+                                        <p>ferramentas de automação inteligente reduzem a carga de trabalho manual</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="../contacto.html">Saber mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Porque escolher-nos</div>
+                    <h1 class="text-white mb-4">Somos os melhores na indústria de IA com 1 ano de experiência</h1>
+                    <p class="text-light mb-4">Estamos comprometidos com a ética e a transparência em todas as nossas iniciativas de IA. Priorizamos a privacidade e a segurança dos dados</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Melhora na Tomada de Decisões</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Inovação Contínua</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Personalização</span>
+                    </div>
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">14</h2>
+                                    <p class="text-white mb-0">Clientes satisfeitos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">8</h2>
+                                    <p class="text-white mb-0">Em projectos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Case Study</div>
+                <h1 class="mb-4 text-primary">Explore nossos estudos de caso recentes de IA</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="../contacto.html">
+                            <small>Automação Robótica</small>
+                            <h5 class="lh-base text-white mb-3">Soluções avançadas que utilizam IA
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="../contacto.html">
+                            <small>Aprendizado de máquina</small>
+                            <h5 class="lh-base text-white mb-3">Automatize tarefas repetitivas e foque no que realmente importa.
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="../contacto.html">
+                            <small>Análise Preditiva</small>
+                            <h5 class="lh-base text-white mb-3">Utilize dados e análises preditivas para tomar decisões mais assertivas.
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Duvidas frequentes</div>
+                <h1 class="mb-4 text-primary">Perguntas frequentes populares</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Como desenvolver um site?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Desenvolver um site envolve várias etapas, desde o planejamento inicial até a implementação e manutenção contínua. Aqui está um guia passo a passo para ajudá-lo a criar um site para a sua empresa de tecnologia: 1. Planejamento Defina o Objetivo do Site:
+                                    Determine o propósito do site: informar, vender produtos, oferecer serviços, etc. Identifique seu público-alvo. Pesquisa e Benchmarking: Pesquise os sites de concorrentes e líderes do setor. Liste funcionalidades e
+                                    design que você gostaria de incorporar. Escolha do Domínio e Hospedagem: Escolha um nome de domínio que reflita o nome da sua empresa ou o objetivo do site. Selecione um serviço de hospedagem confiável. 2. Estrutura
+                                    e Conteúdo Esqueleto do Site (Wireframe): Crie um wireframe para planejar a estrutura do site, como a disposição dos elementos em cada página. Criação de Conteúdo: Escreva textos para cada página (home, sobre, serviços,
+                                    blog, contato, etc.). Prepare imagens, gráficos e outros elementos visuais. 3. Design Escolha do Design: Selecione um design que reflita a identidade visual da sua empresa. Utilize ferramentas de design como Adobe XD,
+                                    Figma ou Sketch para criar o layout. Responsividade: Assegure-se de que o design é responsivo, ou seja, funciona bem em dispositivos móveis e tablets. 4. Desenvolvimento Escolha da Plataforma: Para iniciantes, plataformas
+                                    como WordPress, Wix ou Squarespace são ideais. Para mais controle, considere desenvolver do zero utilizando HTML, CSS, JavaScript, e frameworks como React ou Angular. Configuração da Plataforma: Configure o CMS (WordPress,
+                                    por exemplo) ou prepare seu ambiente de desenvolvimento. Desenvolvimento do Front-end: Construa o layout visual do site utilizando HTML, CSS e JavaScript. Adicione interatividade e animações se necessário. Desenvolvimento
+                                    do Back-end: Se necessário, desenvolva a lógica do servidor utilizando linguagens como Node.js, Python, Ruby ou PHP. Configure bancos de dados para armazenamento de dados dinâmicos. 5. Testes Testes de Usabilidade:
+                                    Verifique se o site é fácil de navegar e utilizar. Peça feedback de usuários potenciais. Testes de Compatibilidade: Teste o site em diferentes navegadores (Chrome, Firefox, Safari, Edge). Verifique o funcionamento em
+                                    diferentes dispositivos e tamanhos de tela. Testes de Desempenho: Utilize ferramentas como Google PageSpeed Insights para verificar o desempenho. Otimize imagens e código para melhorar a velocidade de carregamento.
+                                    6. Lançamento Preparação para o Lançamento: Configure o domínio e a hospedagem. Faça uma revisão final de todo o conteúdo e funcionalidade. Lançamento: Publique o site. Anuncie o lançamento através de e-mails, redes
+                                    sociais e outros canais de marketing. 7. Manutenção Atualizações Regulares: Mantenha o CMS, plugins e temas atualizados. Atualize o conteúdo regularmente para manter o site relevante. Monitoramento: Utilize ferramentas
+                                    como Google Analytics para monitorar o tráfego e o comportamento dos usuários. Corrija quaisquer problemas técnicos rapidamente. Segurança: Implemente medidas de segurança como certificados SSL, backups regulares e
+                                    proteção contra malware. Recursos Úteis Ferramentas de Design: Adobe XD, Figma, Sketch Plataformas de Desenvolvimento: WordPress, Wix, Squarespace Linguagens e Frameworks: HTML, CSS, JavaScript, React, Angular, Node.js,
+                                    Python, Ruby, PHP Hospedagem: Bluehost, HostGator, SiteGround Análise e Monitoramento: Google Analytics, PageSpeed Insights
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Quanto tempo levará para obter um novo site?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    O tempo necessário para desenvolver um novo site pode variar bastante dependendo de diversos fatores como a complexidade do projeto, os recursos disponíveis e o nível de personalização desejado. Aqui está uma visão geral de quanto tempo cada etapa pode
+                                    levar: ### 1. Planejamento (1-2 semanas) - **Definição de Objetivos:** 1-2 dias - **Pesquisa e Benchmarking:** 3-5 dias - **Escolha do Domínio e Hospedagem:** 1-3 dias ### 2. Estrutura e Conteúdo (2-4 semanas) - **Esqueleto
+                                    do Site (Wireframe):** 1-2 semanas - **Criação de Conteúdo:** 1-2 semanas (pode variar dependendo da quantidade de conteúdo e da necessidade de aprovação) ### 3. Design (2-4 semanas) - **Escolha do Design:** 1 semana
+                                    - **Criação do Layout:** 1-2 semanas - **Revisões e Aprovações:** 1-2 semanas ### 4. Desenvolvimento (3-8 semanas) - **Escolha da Plataforma e Configuração:** 1 semana - **Desenvolvimento do Front-end:** 2-4 semanas
+                                    - **Desenvolvimento do Back-end:** 2-4 semanas (caso necessário) - **Integração de Funcionalidades e Testes Intermediários:** 1-2 semanas ### 5. Testes (1-2 semanas) - **Testes de Usabilidade:** 3-5 dias - **Testes
+                                    de Compatibilidade:** 3-5 dias - **Testes de Desempenho:** 3-5 dias ### 6. Lançamento (1 semana) - **Preparação para o Lançamento:** 2-3 dias - **Publicação e Anúncio:** 2-3 dias ### 7. Manutenção (Contínuo) - **Atualizações
+                                    Regulares:** Semanalmente ou Mensalmente - **Monitoramento e Correções:** Continuamente - **Segurança:** Continuamente ### Estimativa Total de Tempo **Projetos Simples (sites institucionais, portfólios, blogs):** -
+                                    **4-6 semanas** para um site básico com conteúdo estático e algumas funcionalidades básicas. **Projetos de Complexidade Média (e-commerce, sites interativos):** - **6-10 semanas** para um site com funcionalidades como
+                                    carrinho de compras, login de usuários, e integração com sistemas de pagamento. **Projetos Complexos (plataformas customizadas, web apps):** - **10-16 semanas ou mais** para sites com funcionalidades altamente personalizadas,
+                                    desenvolvimento de back-end robusto, e integrações complexas. ### Considerações Adicionais - **Equipa de Desenvolvimento:** Trabalhar com uma equipa experiente pode acelerar o processo. - **Ferramentas Utilizadas:**
+                                    Plataformas como WordPress podem reduzir significativamente o tempo de desenvolvimento em comparação com um desenvolvimento do zero. - **Revisões e Feedback:** O tempo para revisões e aprovações por parte do cliente
+                                    pode impactar o cronograma. Ao seguir estas etapas, você pode ter uma boa estimativa de quanto tempo levará para desenvolver o seu novo site. Ajustes e personalizações adicionais podem prolongar o prazo, por isso é
+                                    essencial planejar e gerir o projeto de forma eficaz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Você só cria sites HTML?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Não, o desenvolvimento de sites pode envolver várias tecnologias além do HTML. Aqui estão algumas das principais tecnologias e ferramentas usadas no desenvolvimento de sites: ### Front-End (Cliente) 1. **HTML (HyperText Markup Language):** - A linguagem
+                                    básica para a estruturação do conteúdo da web. 2. **CSS (Cascading Style Sheets):** - Utilizado para estilizar e definir a aparência visual do site. 3. **JavaScript:** - Linguagem de programação que permite criar interatividade
+                                    e dinamicidade no site. 4. **Frameworks e Bibliotecas JavaScript:** - **React:** Biblioteca JavaScript para construir interfaces de usuário. - **Angular:** Framework para construir aplicações web dinâmicas. - **Vue.js:**
+                                    Framework progressivo para construir interfaces de usuário. 5. **Pré-processadores CSS:** - **Sass:** Extende CSS com funcionalidades como variáveis, aninhamento e mixins. - **LESS:** Similar ao Sass, oferece funcionalidades
+                                    adicionais ao CSS. ### Back-End (Servidor) 1. **Linguagens de Programação:** - **Node.js:** Ambiente de execução JavaScript do lado do servidor. - **Python:** Utilizado com frameworks como Django e Flask. - **Ruby:**
+                                    Utilizado com o framework Ruby on Rails. - **PHP:** Linguagem amplamente usada para desenvolvimento web. - **Java:** Utilizado em aplicações web corporativas. 2. **Frameworks e Plataformas:** - **Express.js:** Framework
+                                    minimalista para Node.js. - **Django:** Framework de alto nível para desenvolvimento rápido em Python. - **Ruby on Rails:** Framework de desenvolvimento rápido para Ruby. - **Laravel:** Framework PHP para desenvolvimento
+                                    web robusto. ### Bancos de Dados 1. **SQL (Relacional):** - **MySQL:** Banco de dados relacional popular. - **PostgreSQL:** Banco de dados relacional avançado. - **SQLite:** Banco de dados leve e auto-suficiente. 2.
+                                    **NoSQL (Não Relacional):** - **MongoDB:** Banco de dados orientado a documentos. - **Redis:** Armazenamento em memória para dados chave-valor. - **Firebase:** Plataforma de desenvolvimento de aplicativos com banco
+                                    de dados em tempo real. ### Ferramentas e Tecnologias Auxiliares 1. **Controle de Versão:** - **Git:** Sistema de controle de versão distribuído. - **GitHub/GitLab/Bitbucket:** Plataformas de hospedagem de repositórios
+                                    Git. 2. **Gerenciadores de Pacotes:** - **npm:** Gerenciador de pacotes para Node.js. - **yarn:** Alternativa ao npm. - **Composer:** Gerenciador de dependências para PHP. 3. **Automação e Build:** - **Webpack:** Empacotador
+                                    de módulos para JavaScript. - **Gulp:** Ferramenta de automação de tarefas. - **Grunt:** Ferramenta de automação de tarefas. 4. **APIs e Integrações:** - **REST:** Arquitetura de integração de serviços web. - **GraphQL:**
+                                    Linguagem de consulta para APIs. - **WebSockets:** Protocolo para comunicação bidirecional em tempo real. ### Plataformas de Desenvolvimento e CMS 1. **WordPress:** - Plataforma de gerenciamento de conteúdo amplamente
+                                    utilizada. 2. **Wix/Squarespace/Shopify:** - Plataformas para criação de sites com pouca ou nenhuma necessidade de programação. ### Desenvolvimento Móvel 1. **Responsive Design:** - Utilização de CSS e frameworks como
+                                    Bootstrap para garantir que o site funcione bem em todos os dispositivos. 2. **Progressive Web Apps (PWAs):** - Aplicações web que se comportam como aplicações nativas. 3. **Frameworks para Desenvolvimento Móvel:**
+                                    - **React Native:** Permite o desenvolvimento de aplicativos móveis usando React. - **Flutter:** Framework do Google para desenvolvimento de aplicativos nativos com uma única base de código. ### Ferramentas de Desenvolvimento
+                                    1. **IDEs e Editores de Código:** - **Visual Studio Code:** Editor de código poderoso e personalizável. - **Sublime Text:** Editor de texto leve e eficiente. - **JetBrains IntelliJ/WebStorm:** IDEs para desenvolvimento
+                                    avançado. ### Processos de Desenvolvimento 1. **Metodologias Ágeis:** - **Scrum/Kanban:** Métodos para gerenciamento de projetos de desenvolvimento de software. 2. **DevOps:** - Integração contínua, entrega contínua
+                                    e automação de deploys com ferramentas como Jenkins, Docker, Kubernetes, etc. ### Conclusão A criação de um site pode envolver muito mais do que apenas HTML. Dependendo da complexidade e dos requisitos do projeto, uma
+                                    variedade de tecnologias e ferramentas podem ser usadas. Na [Nome da Empresa], oferecemos serviços de desenvolvimento web abrangentes, utilizando as melhores práticas e tecnologias de ponta para garantir que seu site
+                                    seja funcional, atraente e eficiente. Se tiver mais perguntas ou precisar de uma solução específica, estamos à disposição para ajudar!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Meu site será compatível com dispositivos móveis?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Sim, garantir que seu site seja compatível com dispositivos móveis é fundamental no desenvolvimento moderno de sites. Aqui estão as principais estratégias e práticas que utilizamos para assegurar a compatibilidade móvel: ### 1. Design Responsivo **CSS
+                                    Media Queries:** - Utilizamos media queries para aplicar estilos específicos com base no tamanho da tela e outras características do dispositivo. Isso permite que o layout do site se ajuste automaticamente a diferentes
+                                    tamanhos de tela. ```css /* Exemplo de media query para dispositivos móveis */ @media (max-width: 768px) { body { font-size: 14px; } .container { padding: 10px; } } ``` **Frameworks CSS:** - **Bootstrap:** Framework
+                                    popular que facilita a criação de layouts responsivos. - **Foundation:** Outro framework CSS poderoso para design responsivo. **Layout Fluido:** - Utilizamos unidades relativas como porcentagens e `em`/`rem` para definir
+                                    tamanhos, em vez de unidades fixas como pixels, permitindo que os elementos redimensionem de forma fluida. ### 2. Mobile-First Design **Abordagem Mobile-First:** - Projetamos e desenvolvemos primeiro para dispositivos
+                                    móveis, garantindo que a experiência seja otimizada desde o início para telas menores. Depois, adaptamos o design para dispositivos maiores. ### 3. Otimização de Imagens **Imagens Responsivas:** - Utilizamos atributos
+                                    HTML como `srcset` e `sizes` para fornecer diferentes versões de imagens com base no tamanho da tela e na resolução do dispositivo. ```html
+                                    <img src="image-small.jpg" srcset="image-small.jpg 300w, image-medium.jpg 600w, image-large.jpg 1200w" sizes="(max-width: 600px) 480px, 
+            (max-width: 1200px) 800px, 
+            1200px" alt="Descrição da imagem"> ``` **Compactação de Imagens:** - Compactamos imagens para reduzir o tamanho dos arquivos e melhorar os tempos de carregamento em dispositivos móveis. ### 4. Performance
+                                    **Minificação e Compactação:** - Minificamos arquivos CSS e JavaScript e utilizamos compactação gzip para reduzir o tamanho dos arquivos e melhorar a velocidade de carregamento. **Carregamento Assíncrono:** - Carregamos
+                                    scripts JavaScript de forma assíncrona para que eles não bloqueiem o carregamento da página. **Lazy Loading:** - Implementamos o carregamento preguiçoso de imagens e outros recursos para que sejam carregados apenas
+                                    quando entram na viewport do usuário. ### 5. Navegação e Usabilidade **Menus Adaptáveis:** - Utilizamos menus hamburguer ou menus deslizantes para economizar espaço e melhorar a navegação em dispositivos móveis. **Botões
+                                    e Links Adequados:** - Certificamo-nos de que os botões e links são grandes o suficiente para serem facilmente tocados com um dedo, seguindo as diretrizes de acessibilidade móvel. ### 6. Testes em Dispositivos Reais
+                                    **Testes em Diversos Dispositivos:** - Testamos o site em uma variedade de dispositivos móveis reais, incluindo smartphones e tablets, para garantir compatibilidade e uma experiência de usuário consistente. **Ferramentas
+                                    de Teste:** - Utilizamos ferramentas como Google Mobile-Friendly Test, BrowserStack, e Responsinator para verificar a responsividade e compatibilidade do site. ### 7. Progressive Web Apps (PWAs) **PWAs:** - Para funcionalidades
+                                    adicionais e melhor performance em dispositivos móveis, podemos transformar o site em uma Progressive Web App (PWA), permitindo uma experiência similar à de um aplicativo nativo. ### Conclusão Ao seguir estas práticas
+                                    e técnicas, garantimos que seu site seja totalmente compatível com dispositivos móveis, proporcionando uma experiência de usuário superior em qualquer dispositivo. Se tiver mais perguntas ou precisar de uma solução
+                                    específica para o seu projeto, estamos à disposição para ajudar!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Equipe</div>
+                    <h1 class="mb-4 text-primary">Conheça nossos membros experientes da equipe</h1>
+                    <p class="mb-4"></p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/minhaimagem1.jpg" alt="">
+                                        <h5 class="mb-0">Luther Banze</h5>
+                                        <small>CEO & Founder</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Vamos assinar a newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50"></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
